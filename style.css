@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.bg-img {
+    background-image: url('img/header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    flex-direction: column;
+}
+
+.navbar {
+    padding: 1.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    padding: 1em;
+}
+
+h1 {
+    line-height: 2em;
+    display: flex;
+    align-items: flex-end;
+    padding: 1em;
+    flex-grow: 2;
+    font-weight: 500;
+}
+
+h2 {
+    text-align: center;
+    margin: 1em;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+
+.section-a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedor-a {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin: 1em;
+    gap: 0.5em;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+}
+
+h3 {
+    text-transform: uppercase;
+    padding: 2em;
+}
+
+.card {
+    padding: 1em;
+    flex-grow: 1;
+}
+
+.section-b {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor-b {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+    margin: 1em;
+}
+
+.contenedor-anuncios {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+.anuncios {
+    border: 1px solid #b5b5b5;
+    background: #f5f5f5;
+    justify-content: center;
+    flex-grow: 1;   
+}
+.anuncios img{
+    width: 100%; 
+    object-fit: contain;
+}
+
+.anuncios h3 {
+    text-transform: capitalize;
+    font-weight: 400;
+    text-align: left;
+    padding: 0.5em;
+}
+
+.anuncios p {
+    padding: 0.5em;
+}
+
+.anuncios h5 {
+    color: #71b11f;
+    padding: 0.5em;
+}
+.caracteristicas {
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.caracteristicas div {
+    display: flex;
+    flex-direction: row;
+}
+
+.caracteristicas img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.btn-contenedor {
+    width: 100%;
+}
+
+.btn-propiedad {
+    border: none;
+    background: #df8817;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.5em;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.btn-todo {
+    padding: 1em;
+    background: #71b11f;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.button {
+    border: none;
+    background: #df8817;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+footer {
+    width: 100%;
+    box-sizing: border-box;
+    color: #fff; 
+}
+
+footer .bg-img {
+    background-image: url('img/encuentra.jpg');
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: space-around;
+    padding: 2em 5em 2em 5em;
+}
+
+footer h2 {
+    text-align: start;
+    padding: 0;
+    margin: 0;
+}
+
+footer button {
+    width: fit-content;
+}
+
+.footer {
+    padding: 2em 0.5em 0.5em 0.5em;
+    background: #333333;
+    bottom: 0;
+    display: flex; 
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.footer p {
+    padding-right: 1.5em;
+}
+
+.footer ul {
+    display: flex;
+    list-style: none;
+    align-items: flex-end;
+}
+
+.footer ul li {
+    padding-left: 1.5em;
+    
+}
+
+.dropdown-menu {
+    display: none;
+    position: relative; 
+}
+
+.dropdown-btn {
+    cursor: pointer;
+    color: #fff;
+    background: none;
+    padding: 0.3em 1em 0.3em 1em;
+    border: 1px solid #fff;
+    font-size: 20px;
+}
+
+.dropdown {
+    width: 100%;    
+    display: none;
+    position: absolute;
+    text-align: right;
+    background-color: #fff;
+    color: #000;
+}
+
+.dropdown a {
+    display: block;
+    padding: 0.5em;
+    transition: 0.3s all ease-in-out;
+}
+
+.dropdown a:hover {
+    background-color: #e0e0e0;
+}
+
+@media(max-width: 1010px) {
+    .contenedor-anuncios{
+        flex-direction: column;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 795px) {
+    .contenedor-a {
+        flex-direction: column;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .dropdown-menu {
+        display: inline-block;
+    }
+    
+    .dropdown-menu:hover .dropdown {
+        display: block;
+    }
+
+    .navbar {
+        justify-content: space-between;
+    }
+
+    .navbar img {
+        width: 170px;
+        object-fit: contain;
+    }
+}
+
